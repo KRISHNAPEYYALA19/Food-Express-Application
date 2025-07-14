@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Delivery - Restaurants</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+    .restaurant-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .restaurant-image {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .restaurant-content {
+      padding: 15px;
+    }
+
+    .restaurant-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    .rating-eta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      font-size: 13px;
+      color: #777;
+    }
+
+    /* Responsive design */
+    @media (max-width: 1024px) {
+      .restaurant-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .restaurant-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<center>
+<body>
+
+  <h1>Popular Restaurants Near You</h1>
+
+  <div class="restaurant-container">
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/spicehub.jpg" alt="Spice Hub">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Spice Hub</div>
+      <div class="rating-eta">
+        <span>⭐ 4.5</span>
+        <span>30 mins</span>
+      </div>
+      <div class="description">Indian cuisine</div>
+      <div class="location">Madhapur, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/burgerbay.jpg" alt="Burger Bay">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Burger Bay</div>
+      <div class="rating-eta">
+        <span>⭐ 4.2</span>
+        <span>25 mins</span>
+      </div>
+      <div class="description">American cuisine</div>
+      <div class="location">Hitech City, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/kfc.jpg" alt="KFC">
+    <div class="restaurant-content">
+      <div class="restaurant-name">KFC</div>
+      <div class="rating-eta">
+        <span>⭐ 5.0</span>
+        <span>25 mins</span>
+      </div>
+      <div class="description">Fast Food</div>
+      <div class="location">Kukatpally, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/dominos.jpg" alt="Domino's">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Domino's</div>
+      <div class="rating-eta">
+        <span>⭐ 4.4</span>
+        <span>20 mins</span>
+      </div>
+      <div class="description">Pizza</div>
+      <div class="location">SR Nagar, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/subway.jpg" alt="Subway">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Subway</div>
+      <div class="rating-eta">
+        <span>⭐ 4.3</span>
+        <span>18 mins</span>
+      </div>
+      <div class="description">Healthy</div>
+      <div class="location">Begumpet, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/tandoori.jpg" alt="Tandoori Treats">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Tandoori Treats</div>
+      <div class="rating-eta">
+        <span>⭐ 4.6</span>
+        <span>35 mins</span>
+      </div>
+      <div class="description">North Indian</div>
+      <div class="location">Ameerpet, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/biryani.jpg" alt="Biryani House">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Biryani House</div>
+      <div class="rating-eta">
+        <span>⭐ 4.8</span>
+        <span>28 mins</span>
+      </div>
+      <div class="description">Hyderabadi</div>
+      <div class="location">Mehdipatnam, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/pizzahut.jpg" alt="Pizza Hut">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Pizza Hut</div>
+      <div class="rating-eta">
+        <span>⭐ 4.1</span>
+        <span>22 mins</span>
+      </div>
+      <div class="description">Pizza</div>
+      <div class="location">Jubilee Hills, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/chinesewok.jpg" alt="Chinese Wok">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Chinese Wok</div>
+      <div class="rating-eta">
+        <span>⭐ 4.0</span>
+        <span>27 mins</span>
+      </div>
+      <div class="description">Chinese</div>
+      <div class="location">Kondapur, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/andhraspice.jpg" alt="Andhra Spice">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Andhra Spice</div>
+      <div class="rating-eta">
+        <span>⭐ 4.5</span>
+        <span>32 mins</span>
+      </div>
+      <div class="description">Andhra</div>
+      <div class="location">Gachibowli, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/wowmomo.jpg" alt="Wow! Momo">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Wow! Momo</div>
+      <div class="rating-eta">
+        <span>⭐ 4.3</span>
+        <span>15 mins</span>
+      </div>
+      <div class="description">Snacks</div>
+      <div class="location">KPHB, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/mcdonalds.jpg" alt="McDonald's">
+    <div class="restaurant-content">
+      <div class="restaurant-name">McDonald's</div>
+      <div class="rating-eta">
+        <span>⭐ 4.7</span>
+        <span>20 mins</span>
+      </div>
+      <div class="description">Fast Food</div>
+      <div class="location">Banjara Hills, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/rollsking.jpg" alt="Rolls King">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Rolls King</div>
+      <div class="rating-eta">
+        <span>⭐ 4.2</span>
+        <span>18 mins</span>
+      </div>
+      <div class="description">Street Food</div>
+      <div class="location">Secunderabad, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/rajdhani.jpg" alt="Rajdhani Thali">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Rajdhani Thali</div>
+      <div class="rating-eta">
+        <span>⭐ 4.6</span>
+        <span>40 mins</span>
+      </div>
+      <div class="description">Gujarati</div>
+      <div class="location">Himayatnagar, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/bbqnation.jpg" alt="Barbeque Nation">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Barbeque Nation</div>
+      <div class="rating-eta">
+        <span>⭐ 4.7</span>
+        <span>45 mins</span>
+      </div>
+      <div class="description">Grill</div>
+      <div class="location">Kukatpally, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/creamstone.jpg" alt="Cream Stone">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Cream Stone</div>
+      <div class="rating-eta">
+        <span>⭐ 4.9</span>
+        <span>12 mins</span>
+      </div>
+      <div class="description">Dessert</div>
+      <div class="location">Ameerpet, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/frozenbottle.jpg" alt="Frozen Bottle">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Frozen Bottle</div>
+      <div class="rating-eta">
+        <span>⭐ 4.4</span>
+        <span>10 mins</span>
+      </div>
+      <div class="description">Beverages</div>
+      <div class="location">Madhapur, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/punjabidhaba.jpg" alt="Punjabi Dhaba">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Punjabi Dhaba</div>
+      <div class="rating-eta">
+        <span>⭐ 4.5</span>
+        <span>34 mins</span>
+      </div>
+      <div class="description">Punjabi</div>
+      <div class="location">Chandanagar, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/kritunga.jpg" alt="Kritunga">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Kritunga</div>
+      <div class="rating-eta">
+        <span>⭐ 4.2</span>
+        <span>30 mins</span>
+      </div>
+      <div class="description">Rayalaseema</div>
+      <div class="location">Kompally, Hyderabad</div>
+    </div>
+  </div>
+
+  <div class="restaurant-card">
+    <img class="restaurant-image" src="images/paradise.jpg" alt="Paradise">
+    <div class="restaurant-content">
+      <div class="restaurant-name">Paradise</div>
+      <div class="rating-eta">
+        <span>⭐ 4.1</span>
+        <span>22 mins</span>
+      </div>
+      <div class="description">Asian</div>
+      <div class="location">Kothaguda, Hyderabad</div>
+    </div>
+  </div>
+</div>
+
+    <center>
+    </body>
+    </html>
+    
